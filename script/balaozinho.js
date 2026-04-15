@@ -1,7 +1,7 @@
 //Exercício 1: Balãozinho com informações da marcação
 
 const balaozinho = document.querySelector('#balaozinho'); //Selecionar o primeiro elemento que tem id = balaozinho
-const marcacoes  = document.querySelectorAll('.marcacao');   //Selecionar todos os elementos que tem id = marcacao
+const marcacoes  = document.querySelectorAll('.marcacao');//Selecionar todos os elementos que tem id = marcacao
 
 for (const marcacao of marcacoes) {         // Pecorrendo todas as marcações
 
