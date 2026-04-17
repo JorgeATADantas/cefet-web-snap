@@ -6,3 +6,18 @@ const foto = document.querySelector('.foto-anotada img');
 filtro.addEventListener('change', function () {
   foto.style.filter = filtro.value;
 });
+
+
+//Desafio 1: Trocar a foto por outro arquivo.
+
+const arquivoImagem = document.querySelector('#imagem');
+arquivoImagem.addEventListener('change', function (e) {
+    const arquivo = new FileReader();
+    arquivo.addEventListener('load', function () {
+    foto.src = arquivo.result;
+    foto.style.filter = 'none';
+    filtro.value = 'none';
+  });
+
+  arquivo.readAsDataURL(e.target.files[0]);
+});
